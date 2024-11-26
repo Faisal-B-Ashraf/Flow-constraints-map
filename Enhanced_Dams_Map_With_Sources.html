@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_106cf451c3473478933572184f4f3031 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_106cf451c3473478933572184f4f3031" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_106cf451c3473478933572184f4f3031 = L.map(
+                "map_106cf451c3473478933572184f4f3031",
+                {
+                    center: [46.5, -120.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2ee18fd08b5807cd572609cf0dcd1e43 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2ee18fd08b5807cd572609cf0dcd1e43.addTo(map_106cf451c3473478933572184f4f3031);
+    
+            var marker_23b9860ec62cf5d67b113e72e80ad3cb = L.marker(
+                [45.64417, -121.94056],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_df79852f4fa1e8e166e81f241baa91e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23b9860ec62cf5d67b113e72e80ad3cb.setIcon(icon_df79852f4fa1e8e166e81f241baa91e0);
+        
+    
+        var popup_9339fb8b33440f08bc3248193caf3efc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d16d318ba885a373483ea929c64e8454 = $(`<div id="html_d16d318ba885a373483ea929c64e8454" style="width: 100.0%; height: 100.0%;">     <b>Bonneville Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 70–74 ft MSL</li>         <li><b>Release Constraints:</b> Fluctuations: 4 ft/8 hrs</li>         <li><b>River Flow Constraints:</b> Not explicitly mentioned</li>         <li><b>Ramping Constraints:</b> Not explicitly mentioned</li>         <li><b>Logical Constraints:</b> Spill adjusted for ecological needs</li>         <li><b>State-Dependent Constraints:</b> Adjustments based on inflow forecasts</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 45.64417, -121.94056</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_9339fb8b33440f08bc3248193caf3efc.setContent(html_d16d318ba885a373483ea929c64e8454);
+            
+        
+
+        marker_23b9860ec62cf5d67b113e72e80ad3cb.bindPopup(popup_9339fb8b33440f08bc3248193caf3efc)
+        ;
+
+        
+    
+    
+            var marker_b020a09530c7511cf7d5cfbe835c4d3a = L.marker(
+                [47.955, -118.98194],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_32e0ea0aff1f9d34e78024f7972ce254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b020a09530c7511cf7d5cfbe835c4d3a.setIcon(icon_32e0ea0aff1f9d34e78024f7972ce254);
+        
+    
+        var popup_ff76efbfcaded132316abf7a8a901925 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b47c5085882ca67137b9ba14b9892578 = $(`<div id="html_b47c5085882ca67137b9ba14b9892578" style="width: 100.0%; height: 100.0%;">     <b>Grand Coulee Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Full pool: 1,290 ft; Min: 1,208 ft</li>         <li><b>Release Constraints:</b> Varies by inflow and flood control</li>         <li><b>River Flow Constraints:</b> Seasonal flows for migration</li>         <li><b>Ramping Constraints:</b> Gradual drawdowns: max 0.5 ft/hr</li>         <li><b>Logical Constraints:</b> Seasonal rule curves</li>         <li><b>State-Dependent Constraints:</b> Operations triggered by inflow rates</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 47.955, -118.98194</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_ff76efbfcaded132316abf7a8a901925.setContent(html_b47c5085882ca67137b9ba14b9892578);
+            
+        
+
+        marker_b020a09530c7511cf7d5cfbe835c4d3a.bindPopup(popup_ff76efbfcaded132316abf7a8a901925)
+        ;
+
+        
+    
+    
+            var marker_6104f456b31d18c30e58ca3268f5bf6f = L.marker(
+                [45.935, -119.29833],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_82523e83b19df68e138fa4df2b3d619d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6104f456b31d18c30e58ca3268f5bf6f.setIcon(icon_82523e83b19df68e138fa4df2b3d619d);
+        
+    
+        var popup_625627baed6a4926307917c5ce31614d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9aaa556a4c39188e8ffcd9e5f3c1fa94 = $(`<div id="html_9aaa556a4c39188e8ffcd9e5f3c1fa94" style="width: 100.0%; height: 100.0%;">     <b>McNary Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal range: 335–340 ft</li>         <li><b>Release Constraints:</b> Min: 12,500 cfs</li>         <li><b>River Flow Constraints:</b> Navigation flows downstream</li>         <li><b>Ramping Constraints:</b> Gradual changes: max 0.5 ft/hr</li>         <li><b>Logical Constraints:</b> Spillway adjustment for flood</li>         <li><b>State-Dependent Constraints:</b> Flood triggers based on reservoir level</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 45.935, -119.29833</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_625627baed6a4926307917c5ce31614d.setContent(html_9aaa556a4c39188e8ffcd9e5f3c1fa94);
+            
+        
+
+        marker_6104f456b31d18c30e58ca3268f5bf6f.bindPopup(popup_625627baed6a4926307917c5ce31614d)
+        ;
+
+        
+    
+    
+            var marker_0bec4b7ccf24650ddc9073a381ff5d97 = L.marker(
+                [48.34167, -114.03],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_cfdfb9ce6a1b29950ec8841d01a60c8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0bec4b7ccf24650ddc9073a381ff5d97.setIcon(icon_cfdfb9ce6a1b29950ec8841d01a60c8a);
+        
+    
+        var popup_c8260aa6575c7bb6e6f314b1d118b3f6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_41d5fdb6b41534c29bf1a52cb0831b9b = $(`<div id="html_41d5fdb6b41534c29bf1a52cb0831b9b" style="width: 100.0%; height: 100.0%;">     <b>Hungry Horse Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 3,560–3,566 ft</li>         <li><b>Release Constraints:</b> Min flow: 145 cfs for Flathead River</li>         <li><b>River Flow Constraints:</b> Supports spring freshet ecology</li>         <li><b>Ramping Constraints:</b> Hourly change: 1,800 cfs max</li>         <li><b>Logical Constraints:</b> Ice prevention in winter</li>         <li><b>State-Dependent Constraints:</b> Seasonal snowmelt operations</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 48.34167, -114.03</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_c8260aa6575c7bb6e6f314b1d118b3f6.setContent(html_41d5fdb6b41534c29bf1a52cb0831b9b);
+            
+        
+
+        marker_0bec4b7ccf24650ddc9073a381ff5d97.bindPopup(popup_c8260aa6575c7bb6e6f314b1d118b3f6)
+        ;
+
+        
+    
+    
+            var marker_3289dce541d1628a35dfce43c103ca2b = L.marker(
+                [45.60611, -121.12111],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_4f62adb78cdd70d13469612e69520f88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3289dce541d1628a35dfce43c103ca2b.setIcon(icon_4f62adb78cdd70d13469612e69520f88);
+        
+    
+        var popup_04acdb5aaeac8442f0d3bd05f47def3f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7a65ac7e1c5ec97fadc5d05cd0a59ea7 = $(`<div id="html_7a65ac7e1c5ec97fadc5d05cd0a59ea7" style="width: 100.0%; height: 100.0%;">     <b>The Dalles Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 155–160 ft</li>         <li><b>Release Constraints:</b> Seasonal spill: 200,000 cfs</li>         <li><b>River Flow Constraints:</b> Spring freshet mgmt: 450,000 cfs</li>         <li><b>Ramping Constraints:</b> Gradual drawdowns recommended</li>         <li><b>Logical Constraints:</b> Fish bypass triggers in spring</li>         <li><b>State-Dependent Constraints:</b> Flood operations based on reservoir inflow</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 45.60611, -121.12111</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_04acdb5aaeac8442f0d3bd05f47def3f.setContent(html_7a65ac7e1c5ec97fadc5d05cd0a59ea7);
+            
+        
+
+        marker_3289dce541d1628a35dfce43c103ca2b.bindPopup(popup_04acdb5aaeac8442f0d3bd05f47def3f)
+        ;
+
+        
+    
+    
+            var marker_4e510d752024606e0f32bab94b295500 = L.marker(
+                [46.25, -118.86667],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_8c4d33549ae3da08e70e18a005015c64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e510d752024606e0f32bab94b295500.setIcon(icon_8c4d33549ae3da08e70e18a005015c64);
+        
+    
+        var popup_4040840c1f067d2ee44574667903006d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_16247830b0aa16df1c5212a6ea0aba29 = $(`<div id="html_16247830b0aa16df1c5212a6ea0aba29" style="width: 100.0%; height: 100.0%;">     <b>Ice Harbor Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Pool: 438–440 ft</li>         <li><b>Release Constraints:</b> Min flow: 14,000 cfs</li>         <li><b>River Flow Constraints:</b> Navigation flows during freshet</li>         <li><b>Ramping Constraints:</b> Max ramp: 0.25 ft/hr during migration</li>         <li><b>Logical Constraints:</b> Fish bypass systems in use</li>         <li><b>State-Dependent Constraints:</b> Triggered by seasonal inflows</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 46.25, -118.86667</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_4040840c1f067d2ee44574667903006d.setContent(html_16247830b0aa16df1c5212a6ea0aba29);
+            
+        
+
+        marker_4e510d752024606e0f32bab94b295500.bindPopup(popup_4040840c1f067d2ee44574667903006d)
+        ;
+
+        
+    
+    
+            var marker_0f73fbeb1df440b375b708b4e94b2ac3 = L.marker(
+                [46.57167, -118.54167],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_b265ecd39dce8b59eb7b5c4474189eb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f73fbeb1df440b375b708b4e94b2ac3.setIcon(icon_b265ecd39dce8b59eb7b5c4474189eb8);
+        
+    
+        var popup_d6a1561d22dbbaa7d1d9150e1cec183c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_30274ad992d2ad9d1648167fe8c9488a = $(`<div id="html_30274ad992d2ad9d1648167fe8c9488a" style="width: 100.0%; height: 100.0%;">     <b>Lower Monumental Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Pool: 540–543 ft</li>         <li><b>Release Constraints:</b> Regulated flow: 30,000 cfs</li>         <li><b>River Flow Constraints:</b> Seasonal ecological flows downstream</li>         <li><b>Ramping Constraints:</b> Not explicitly detailed</li>         <li><b>Logical Constraints:</b> Seasonal fish migration ops</li>         <li><b>State-Dependent Constraints:</b> Flood responses tied to reservoir inflow</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 46.57167, -118.54167</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_d6a1561d22dbbaa7d1d9150e1cec183c.setContent(html_30274ad992d2ad9d1648167fe8c9488a);
+            
+        
+
+        marker_0f73fbeb1df440b375b708b4e94b2ac3.bindPopup(popup_d6a1561d22dbbaa7d1d9150e1cec183c)
+        ;
+
+        
+    
+    
+            var marker_01a559c07023752ce9937660ae89a563 = L.marker(
+                [46.51, -116.30833],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_ce21867744400450c2ebb32aea8c45da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01a559c07023752ce9937660ae89a563.setIcon(icon_ce21867744400450c2ebb32aea8c45da);
+        
+    
+        var popup_d7e2a04d32d76d2a3df2bee1e2da082d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c76eb1e0125a210e68abca96d51c744d = $(`<div id="html_c76eb1e0125a210e68abca96d51c744d" style="width: 100.0%; height: 100.0%;">     <b>Dworshak Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 1,445–1,600 ft</li>         <li><b>Release Constraints:</b> Max release: 25,000 cfs</li>         <li><b>River Flow Constraints:</b> Flows for Clearwater River ecology</li>         <li><b>Ramping Constraints:</b> Max ramp: 1 ft/hr</li>         <li><b>Logical Constraints:</b> Coordination w/ hatcheries</li>         <li><b>State-Dependent Constraints:</b> Triggered by Clearwater River inflows</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 46.51, -116.30833</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_d7e2a04d32d76d2a3df2bee1e2da082d.setContent(html_c76eb1e0125a210e68abca96d51c744d);
+            
+        
+
+        marker_01a559c07023752ce9937660ae89a563.bindPopup(popup_d7e2a04d32d76d2a3df2bee1e2da082d)
+        ;
+
+        
+    
+    
+            var marker_6eb079993d03de6be9a025f70385411b = L.marker(
+                [46.065, -118.24833],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_d6c474a3730eb195b07b8c559c71d4da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6eb079993d03de6be9a025f70385411b.setIcon(icon_d6c474a3730eb195b07b8c559c71d4da);
+        
+    
+        var popup_d16309bb698579b18230ee9be55499f0 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3564995096b3844e56ef038fe6d18c88 = $(`<div id="html_3564995096b3844e56ef038fe6d18c88" style="width: 100.0%; height: 100.0%;">     <b>Mill Creek Flood Control</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Max height: 62 ft</li>         <li><b>Release Constraints:</b> Adjusted spillway flow for flood mgmt</li>         <li><b>River Flow Constraints:</b> Urban flow regulation priority</li>         <li><b>Ramping Constraints:</b> Stabilization-focused ramping</li>         <li><b>Logical Constraints:</b> High inflow emergency protocols</li>         <li><b>State-Dependent Constraints:</b> Flood management tied to urban inflows</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 46.065, -118.24833</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_d16309bb698579b18230ee9be55499f0.setContent(html_3564995096b3844e56ef038fe6d18c88);
+            
+        
+
+        marker_6eb079993d03de6be9a025f70385411b.bindPopup(popup_d16309bb698579b18230ee9be55499f0)
+        ;
+
+        
+    
+    
+            var marker_9c06edae7b48c059644d27bdfc50b93b = L.marker(
+                [47.99, -119.65],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_dc3b76faf758011ecb8613f3d89dc5de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c06edae7b48c059644d27bdfc50b93b.setIcon(icon_dc3b76faf758011ecb8613f3d89dc5de);
+        
+    
+        var popup_254350d993ecc250dde302dff42ee352 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_15601248392dff53f2fe45e602999d4b = $(`<div id="html_15601248392dff53f2fe45e602999d4b" style="width: 100.0%; height: 100.0%;">     <b>Chief Joseph Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 950–956 ft; Emergency pool: 930 ft</li>         <li><b>Release Constraints:</b> Minimum: 35,000 cfs</li>         <li><b>River Flow Constraints:</b> Year-round baseline for fish migration</li>         <li><b>Ramping Constraints:</b> Tailwater ramping: 2 ft/hr max</li>         <li><b>Logical Constraints:</b> Feb–May: Goose nesting period rules</li>         <li><b>State-Dependent Constraints:</b> Triggered by Columbia River inflows</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 47.99, -119.65</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_254350d993ecc250dde302dff42ee352.setContent(html_15601248392dff53f2fe45e602999d4b);
+            
+        
+
+        marker_9c06edae7b48c059644d27bdfc50b93b.bindPopup(popup_254350d993ecc250dde302dff42ee352)
+        ;
+
+        
+    
+    
+            var marker_90a3f4a37e279b985ee769e8f2fd3126 = L.marker(
+                [47.1, -122.0],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_06a074ab23ec6d6229f374fd82a1b5c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90a3f4a37e279b985ee769e8f2fd3126.setIcon(icon_06a074ab23ec6d6229f374fd82a1b5c4);
+        
+    
+        var popup_3d23dd1a42a7274d40e34d6620ac11c9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_68af499fcbc2b0c2bb95b4e1396e70f4 = $(`<div id="html_68af499fcbc2b0c2bb95b4e1396e70f4" style="width: 100.0%; height: 100.0%;">     <b>Mud Mountain Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Max height: 1,206 ft</li>         <li><b>Release Constraints:</b> Min release: 150 cfs for habitat</li>         <li><b>River Flow Constraints:</b> Ensures year-round flow for flood mgmt</li>         <li><b>Ramping Constraints:</b> Max 0.1 ft/hr during drought</li>         <li><b>Logical Constraints:</b> Emergency flood protocols</li>         <li><b>State-Dependent Constraints:</b> Flood response based on seasonal snowmelt</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 47.1, -122.0</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_3d23dd1a42a7274d40e34d6620ac11c9.setContent(html_68af499fcbc2b0c2bb95b4e1396e70f4);
+            
+        
+
+        marker_90a3f4a37e279b985ee769e8f2fd3126.bindPopup(popup_3d23dd1a42a7274d40e34d6620ac11c9)
+        ;
+
+        
+    
+    
+            var marker_bca0810429c8c4a2d891cf2f9bb8e421 = L.marker(
+                [47.94167, -119.85333],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_7f76304f78acd427596bfcb364d60a09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bca0810429c8c4a2d891cf2f9bb8e421.setIcon(icon_7f76304f78acd427596bfcb364d60a09);
+        
+    
+        var popup_64908cd44dd8d9a14dbeea7f54da18ba = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c2774cbedef280ac03fc7d2255af7456 = $(`<div id="html_c2774cbedef280ac03fc7d2255af7456" style="width: 100.0%; height: 100.0%;">     <b>Wells Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 771–775 ft</li>         <li><b>Release Constraints:</b> Min release: 50,000 cfs</li>         <li><b>River Flow Constraints:</b> Coordination for Columbia River flows</li>         <li><b>Ramping Constraints:</b> Gradual changes: max 0.25 ft/hr</li>         <li><b>Logical Constraints:</b> Fish ladder operation for salmon</li>         <li><b>State-Dependent Constraints:</b> Fish operations based on inflow forecasts</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 47.94167, -119.85333</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_64908cd44dd8d9a14dbeea7f54da18ba.setContent(html_c2774cbedef280ac03fc7d2255af7456);
+            
+        
+
+        marker_bca0810429c8c4a2d891cf2f9bb8e421.bindPopup(popup_64908cd44dd8d9a14dbeea7f54da18ba)
+        ;
+
+        
+    
+    
+            var marker_e8a9fbb406462d689ec3c676f62d4b86 = L.marker(
+                [46.64667, -117.42833],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_c26e441d960d3a2eb21406838ba79ee5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8a9fbb406462d689ec3c676f62d4b86.setIcon(icon_c26e441d960d3a2eb21406838ba79ee5);
+        
+    
+        var popup_6bced1889c7b601bd9ad6ac5ad0e41bb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9d5b895f3b710a1356d1ae907c490ac5 = $(`<div id="html_9d5b895f3b710a1356d1ae907c490ac5" style="width: 100.0%; height: 100.0%;">     <b>Lower Granite Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Pool: 733–738 ft</li>         <li><b>Release Constraints:</b> Min discharge: 5,000 cfs</li>         <li><b>River Flow Constraints:</b> Navigation and fish migration flows</li>         <li><b>Ramping Constraints:</b> Ramping limit for fish: 1 ft/hr</li>         <li><b>Logical Constraints:</b> Seasonal rule curves for freshet</li>         <li><b>State-Dependent Constraints:</b> Flood operations based on spring runoff</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 46.64667, -117.42833</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_6bced1889c7b601bd9ad6ac5ad0e41bb.setContent(html_9d5b895f3b710a1356d1ae907c490ac5);
+            
+        
+
+        marker_e8a9fbb406462d689ec3c676f62d4b86.bindPopup(popup_6bced1889c7b601bd9ad6ac5ad0e41bb)
+        ;
+
+        
+    
+    
+            var marker_84afa661572c14983abc4b0e118bbddb = L.marker(
+                [44.1, -123.3],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_7f59fa683e8d505492c512f01a3d21f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84afa661572c14983abc4b0e118bbddb.setIcon(icon_7f59fa683e8d505492c512f01a3d21f8);
+        
+    
+        var popup_d3968655770029080ee173383a8b4672 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_01d3646c3f6f1996c486ec4881945f19 = $(`<div id="html_01d3646c3f6f1996c486ec4881945f19" style="width: 100.0%; height: 100.0%;">     <b>Fern Ridge Lake</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Pool: 91.6–101.6 ft NGVD29</li>         <li><b>Release Constraints:</b> Regulated for flood and irrigation</li>         <li><b>River Flow Constraints:</b> Ecological flows during spring freshet</li>         <li><b>Ramping Constraints:</b> Gradual releases for sediment</li>         <li><b>Logical Constraints:</b> Irrigation-based operation logic</li>         <li><b>State-Dependent Constraints:</b> Flood responses tied to inflows</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 44.1, -123.3</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_d3968655770029080ee173383a8b4672.setContent(html_01d3646c3f6f1996c486ec4881945f19);
+            
+        
+
+        marker_84afa661572c14983abc4b0e118bbddb.bindPopup(popup_d3968655770029080ee173383a8b4672)
+        ;
+
+        
+    
+    
+            var marker_cee189378d6bd2ddf0eef0a4e08efd46 = L.marker(
+                [47.3, -121.8],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_973b160269bc53b97712838f539abb19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cee189378d6bd2ddf0eef0a4e08efd46.setIcon(icon_973b160269bc53b97712838f539abb19);
+        
+    
+        var popup_f51c7bbeb68852101d5042be1fc847c7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_84408a7a0ae02f1b9e2f32dca3c2ed75 = $(`<div id="html_84408a7a0ae02f1b9e2f32dca3c2ed75" style="width: 100.0%; height: 100.0%;">     <b>Howard Hanson Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Max height: 1,206 ft</li>         <li><b>Release Constraints:</b> Min release: 150 cfs for salmon habitat</li>         <li><b>River Flow Constraints:</b> Year-round flow for flood management</li>         <li><b>Ramping Constraints:</b> Max 0.1 ft/hr during drought</li>         <li><b>Logical Constraints:</b> Emergency flood protocols</li>         <li><b>State-Dependent Constraints:</b> Snowmelt-dependent inflow triggers</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 47.3, -121.8</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_f51c7bbeb68852101d5042be1fc847c7.setContent(html_84408a7a0ae02f1b9e2f32dca3c2ed75);
+            
+        
+
+        marker_cee189378d6bd2ddf0eef0a4e08efd46.bindPopup(popup_f51c7bbeb68852101d5042be1fc847c7)
+        ;
+
+        
+    
+    
+            var marker_292feab11960e5d8e3d02b000369e352 = L.marker(
+                [47.56667, -120.3],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_620db1a687d64c8758a3d447107dffeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_292feab11960e5d8e3d02b000369e352.setIcon(icon_620db1a687d64c8758a3d447107dffeb);
+        
+    
+        var popup_4f0696c0b1f2c0858bd086f863c4c61c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e459acbcc963a8eea707fbdda8a96eab = $(`<div id="html_e459acbcc963a8eea707fbdda8a96eab" style="width: 100.0%; height: 100.0%;">     <b>Rocky Reach Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal pool: 703–707 ft</li>         <li><b>Release Constraints:</b> Min release: 36,000 cfs</li>         <li><b>River Flow Constraints:</b> Flow coordination for Hanford Works</li>         <li><b>Ramping Constraints:</b> Max 0.1 ft/hr for sediment control</li>         <li><b>Logical Constraints:</b> Fish and wildlife adjustments</li>         <li><b>State-Dependent Constraints:</b> Operations linked to Columbia River inflows</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned</li>         <li><b>Coordinates:</b> 47.56667, -120.3</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_4f0696c0b1f2c0858bd086f863c4c61c.setContent(html_e459acbcc963a8eea707fbdda8a96eab);
+            
+        
+
+        marker_292feab11960e5d8e3d02b000369e352.bindPopup(popup_4f0696c0b1f2c0858bd086f863c4c61c)
+        ;
+
+        
+    
+    
+            var marker_8d12a5ed7a3634aea773960012cb7f4a = L.marker(
+                [46.57417, -118.03667],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_41f0c94ac287a0fd88d4130c79bf55e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d12a5ed7a3634aea773960012cb7f4a.setIcon(icon_41f0c94ac287a0fd88d4130c79bf55e2);
+        
+    
+        var popup_43e1ad8eb9219edb661b7a6738bf241a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_95ecf231b790fb4a9f93f021252556ba = $(`<div id="html_95ecf231b790fb4a9f93f021252556ba" style="width: 100.0%; height: 100.0%;">     <b>Little Goose Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> Normal operating range: 633–638 ft (REDACTED Little Goose W…).</li>         <li><b>Release Constraints:</b> Min discharge: 4,000 cfs (REDACTED Little Goose W…).</li>         <li><b>River Flow Constraints:</b> Seasonal flow adjustments for navigation (REDACTED Little Goose W…).</li>         <li><b>Ramping Constraints:</b> Not explicitly mentioned.</li>         <li><b>Logical Constraints:</b> Bypass triggered during migration (REDACTED Little Goose W…).</li>         <li><b>State-Dependent Constraints:</b> Emergency inflow operations triggered above safety thresholds (REDACTED Little Goose W…).</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned.</li>         <li><b>Coordinates:</b> 46.57417, -118.03667</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_43e1ad8eb9219edb661b7a6738bf241a.setContent(html_95ecf231b790fb4a9f93f021252556ba);
+            
+        
+
+        marker_8d12a5ed7a3634aea773960012cb7f4a.bindPopup(popup_43e1ad8eb9219edb661b7a6738bf241a)
+        ;
+
+        
+    
+    
+            var marker_25ff3f838c9f14512d5374a568645c9b = L.marker(
+                [45.715, -120.6925],
+                {}
+            ).addTo(map_106cf451c3473478933572184f4f3031);
+        
+    
+            var icon_9b91cb7a963f23459037b7086095b0c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25ff3f838c9f14512d5374a568645c9b.setIcon(icon_9b91cb7a963f23459037b7086095b0c3);
+        
+    
+        var popup_129f367eadbead7ba6c1c514ec794640 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_47cfc6333dea7caa17218e4468cf439e = $(`<div id="html_47cfc6333dea7caa17218e4468cf439e" style="width: 100.0%; height: 100.0%;">     <b>John Day Dam</b><br>     <ul>         <li><b>Reservoir Level Constraints:</b> High pool for recreation: 265 ft (John_Day_WCM_Draft_9Jan…).</li>         <li><b>Release Constraints:</b> Fish passage spill: 200,000 cfs (John_Day_WCM_Draft_9Jan…).</li>         <li><b>River Flow Constraints:</b> Spring freshet: 450,000 cfs (John_Day_WCM_Draft_9Jan…).</li>         <li><b>Ramping Constraints:</b> Ramping for fish migration: 2 ft/hr max (John_Day_WCM_Draft_9Jan…).</li>         <li><b>Logical Constraints:</b> Fish bypass during migration (John_Day_WCM_Draft_9Jan…).</li>         <li><b>State-Dependent Constraints:</b> Spring freshet operations based on reservoir inflow forecasts (John_Day_WCM_Draft_9Jan…).</li>         <li><b>Constraints Dependent on Water Origin:</b> Not explicitly mentioned.</li>         <li><b>Coordinates:</b> 45.715, -120.6925</li>         <li><b>Source:</b> <a href="https://water.usace.army.mil/a2w/f?p=105:1:::::P1_LINK:52311029-CWMS-report" target="_blank">Click here</a></li>     </ul>     </div>`)[0];
+                popup_129f367eadbead7ba6c1c514ec794640.setContent(html_47cfc6333dea7caa17218e4468cf439e);
+            
+        
+
+        marker_25ff3f838c9f14512d5374a568645c9b.bindPopup(popup_129f367eadbead7ba6c1c514ec794640)
+        ;
+
+        
+    
+</script>
+</html>
